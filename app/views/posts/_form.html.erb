@@ -17,8 +17,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :image_date %>
-    <%= f.text_area :image_date %>
+    <% if post.image.present? %>
+      <%= image_tag post.image_url %>
+    <% end %>
+
+    <%= f.label :image %>
+    <%= f.hidden_field :image, value: f.object.cached_image_data %>
+    <%= f.file_field :image %>
   </div>
 
   <div class="actions">

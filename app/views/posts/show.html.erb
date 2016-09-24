@@ -6,8 +6,10 @@
 </p>
 
 <p>
-  <strong>Image date:</strong>
-  <%= @post.image_date %>
+  <strong>Image data:</strong>
+  <% if @post.image.present? %>
+    <%= image_tag @post.image_url %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
