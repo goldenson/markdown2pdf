@@ -48,3 +48,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'shrine', '~> 2.3', '>= 2.3.1'
 gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
+gem 'image_processing', '~> 0.4.1'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
+gem 'fastimage', '~> 2.0'
