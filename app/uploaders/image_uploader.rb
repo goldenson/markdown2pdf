@@ -5,6 +5,7 @@ class ImageUploader < Shrine
   plugin :backgrounding
   plugin :processing
   plugin :versions
+  plugin :remove_attachment
 
   # Validations
   Attacher.validate do
